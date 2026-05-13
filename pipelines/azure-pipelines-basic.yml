@@ -1,0 +1,16 @@
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - script: echo "Running basic validation"
+    displayName: "Basic validation step"
+
+  - script: echo "This is a support-level pipeline example"
+    displayName: "Explain purpose"
+
+  # Uncomment this step to simulate a failed pipeline.
+  # - script: exit 1
+  #   displayName: "Simulated failure"
