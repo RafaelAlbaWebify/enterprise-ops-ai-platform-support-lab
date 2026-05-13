@@ -1,8 +1,27 @@
 """
-Simulates common AI Platform API errors and support interpretation.
+Support-level AI Platform API error simulation.
 
-This script is for interview preparation and support-level learning.
-It does not call a real AI service.
+Purpose:
+    This script is used for AI Platform Operations interview preparation.
+    It does not call a real AI service.
+
+    The goal is to practise how an Operations / Application Support person
+    would interpret common HTTP status codes, collect evidence and decide
+    when to escalate to identity, platform or DevOps teams.
+
+What this script demonstrates:
+    - Basic API support awareness
+    - HTTP status code interpretation
+    - Escalation thinking
+    - AI Platform support scenarios
+    - Support-level Python usage
+
+What this script does NOT demonstrate:
+    - Advanced Python development
+    - Real Azure OpenAI administration
+    - Model training
+    - MLOps engineering
+    - Production monitoring
 """
 
 ERRORS = {
