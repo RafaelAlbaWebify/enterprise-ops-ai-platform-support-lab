@@ -41,6 +41,30 @@ The first version of this lab focuses on:
 - Windows support evidence collection
 - Support documentation and escalation notes
 
+## Current status
+
+This homelab is currently in its first version.
+
+Completed so far:
+
+- Initial repository structure
+- Support-focused README
+- Basic PowerShell support scripts
+- Basic Python API support scripts
+- Local script validation notes
+- AI Platform 403 incident walkthrough
+- Basic pipeline failure walkthrough
+- Service improvement log
+
+Next planned improvements:
+
+- Add more tested examples
+- Expand runbooks with practical outputs
+- Add more incident scenarios
+- Improve pipeline examples
+- Add Windows Server / Linux VM practice notes
+- Add virtualization and networking practice gradually
+
 ## Key walkthroughs
 
 These files explain realistic support scenarios and how I would handle them in an interview or operational support context:
