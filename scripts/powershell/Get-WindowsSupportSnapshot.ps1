@@ -29,7 +29,34 @@ Get-CimInstance Win32_LogicalDisk -Filter "DriveType=3" |
     Format-Table -AutoSize
 
 Write-Host "`n=== Network Configuration ==="
-Get-NetIPConfiguration | Select-Object InterfaceAlias, IPv4Address, IPv4DefaultGateway, DNSServer | Format-List
+
+Get-NetIPConfiguration | ForEach-Object {
+    $interfaceName = $_.InterfaceAlias
+
+    $ipv4 = if ($_.IPv4Address) {
+        ($_.IPv4Address | ForEach-Object { $_.IPAddress }) -join ", "
+    } else {
+        "No IPv4 address"
+    }
+
+    $gateway = if ($_.IPv4DefaultGateway) {
+        ($_.IPv4DefaultGateway | ForEach-Object { $_.NextHop }) -join ", "
+    } else {
+        "No default gateway"
+    }
+
+    $dnsServers = if ($_.DNSServer -and $_.DNSServer.ServerAddresses) {
+        ($_.DNSServer.ServerAddresses) -join ", "
+    } else {
+        "No DNS servers"
+    }
+
+    Write-Host "Interface: $interfaceName"
+    Write-Host "IPv4: $ipv4"
+    Write-Host "Gateway: $gateway"
+    Write-Host "DNS: $dnsServers"
+    Write-Host ""
+}
 
 Write-Host "`n=== Recently Stopped Automatic Services ==="
 Get-Service |
