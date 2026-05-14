@@ -1,12 +1,30 @@
 """
-Basic API health check script for support-level troubleshooting.
+Basic API health check for support-level troubleshooting.
 
-Usage:
-    python api_health_check.py https://example.com/health
+Purpose:
+    This script performs a simple HTTP endpoint check and reports
+    the response status and basic latency.
 
-Notes:
-    This script is intentionally simple. It is designed for learning and support evidence,
-    not for production monitoring.
+    It is designed for IT Operations / AI Platform Operations practice,
+    where support teams often need to confirm whether an endpoint responds,
+    collect evidence and escalate with useful technical context.
+
+What this script demonstrates:
+    - Basic endpoint availability check
+    - HTTP status handling
+    - Simple latency measurement
+    - API troubleshooting awareness
+    - Support-level Python usage
+
+What this script does NOT demonstrate:
+    - Production monitoring
+    - Advanced observability
+    - Secure API authentication handling
+    - Advanced Python development
+    - Real Azure OpenAI integration
+
+Example:
+    python api_health_check.py https://www.microsoft.com
 """
 
 import sys
