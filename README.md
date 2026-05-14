@@ -45,6 +45,7 @@ The first version of this lab focuses on:
 
 These files explain realistic support scenarios and how I would handle them in an interview or operational support context:
 
+- [Documentation Index](docs/index.md)
 - [AI Platform 403 Forbidden Incident](docs/interview-walkthrough-ai-platform-403.md)
 - [Basic Pipeline Failure Triage](docs/interview-walkthrough-pipeline-failure.md)
 - [How to Explain This Lab in Interviews](docs/how-to-explain-this-lab-in-interviews.md)
