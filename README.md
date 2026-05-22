@@ -1,49 +1,31 @@
-# Enterprise Ops + AI Platform Support Homelab
+# Enterprise Ops + AI Platform Support Lab
 
-A practical homelab focused on IT Operations, Microsoft 365 / identity support, virtualization fundamentals, AI Platform Operations, incident handling, documentation, monitoring and support-level DevOps troubleshooting.
+A practical homelab focused on IT Operations, Microsoft 365 and identity support, AI platform support scenarios, incident handling, documentation, monitoring awareness and support-level DevOps troubleshooting.
 
 ## Purpose
 
-This repository is designed to show operational support thinking:
+This repository shows operational support thinking rather than deep platform engineering. The goal is to demonstrate how I approach incidents, collect evidence, document findings and escalate clearly in enterprise-style environments.
 
-- Incident handling
+## What This Lab Demonstrates
+
+- Incident handling and triage
 - SLA-aware troubleshooting
-- Escalation
-- Documentation and runbooks
-- Knowledge base improvement
-- Basic automation
-- Monitoring awareness
-- AI Platform Operations support concepts
-- Azure DevOps support-level understanding
-- Windows / Microsoft 365 / identity troubleshooting
-
-## Important positioning
-
-This lab is not intended to present me as:
-
-- A senior DevOps engineer
-- A senior Azure AI engineer
-- An MLOps engineer
-- A VMware architect
-- A network engineer
-- A senior Python developer
-
-The goal is to demonstrate that I can support users and projects in enterprise environments, collect evidence, troubleshoot methodically, document findings and escalate to the right technical teams.
-
-## Current focus
-
-The first version of this lab focuses on:
-
-- AI Platform Operations support scenarios
-- API error interpretation
 - Identity and access troubleshooting
+- API error interpretation
 - Basic pipeline failure triage
 - Windows support evidence collection
-- Support documentation and escalation notes
+- Documentation and runbook improvement
+- Knowledge base writing
+- Escalation notes and handover quality
+- AI Platform Operations support concepts
 
-## Current status
+## Important Positioning
 
-This homelab is currently in its first version.
+This lab is not intended to present me as a senior DevOps engineer, Azure AI engineer, MLOps engineer, VMware architect, network engineer or senior Python developer.
+
+It is designed to show that I can support users and projects in enterprise environments, collect evidence, understand symptoms, document findings and escalate to the right technical teams.
+
+## Current Status
 
 Completed so far:
 
@@ -62,19 +44,17 @@ Next planned improvements:
 - Expand runbooks with practical outputs
 - Add more incident scenarios
 - Improve pipeline examples
-- Add Windows Server / Linux VM practice notes
+- Add Windows Server and Linux VM practice notes
 - Add virtualization and networking practice gradually
 
-## Key walkthroughs
-
-These files explain realistic support scenarios and how I would handle them in an interview or operational support context:
+## Key Walkthroughs
 
 - [Documentation Index](docs/index.md)
 - [AI Platform 403 Forbidden Incident](docs/interview-walkthrough-ai-platform-403.md)
 - [Basic Pipeline Failure Triage](docs/interview-walkthrough-pipeline-failure.md)
 - [How to Explain This Lab in Interviews](docs/how-to-explain-this-lab-in-interviews.md)
 
-## Tested support scripts
+## Tested Support Scripts
 
 ### PowerShell
 
@@ -90,7 +70,7 @@ These scripts are used for basic Windows support checks such as service status, 
 
 These scripts are used for basic API support practice, including endpoint checks, latency measurement and HTTP status code interpretation.
 
-## Documentation areas
+## Documentation Areas
 
 ```text
 docs/          Architecture, roadmap and interview explanations
@@ -100,9 +80,14 @@ incidents/     Sample incident tickets and support scenarios
 scripts/       Small PowerShell and Python support scripts
 pipelines/     Basic Azure DevOps pipeline example
 lab-notes/     Lessons learned, improvements and escalation examples
+examples/      Sample outputs and portfolio-friendly evidence
 ```
 
-## Operational support themes
+## Example Output
+
+See [examples/sample-output.md](examples/sample-output.md) for a short example of how support evidence is summarized for escalation.
+
+## Operational Support Themes
 
 This lab practises how to:
 
@@ -115,10 +100,10 @@ This lab practises how to:
 - document findings in runbooks, KB articles and incident notes
 - improve support documentation after testing or repeated issues
 
-## Interview summary
+## Interview Summary
 
-I built this homelab to connect my real IT Operations background with AI Platform Operations and modern infrastructure support.
+I built this homelab to connect my IT Operations background with AI Platform Operations and modern infrastructure support. The focus is support readiness: identity and access troubleshooting, API error interpretation, pipeline log awareness, monitoring, escalation, documentation and continual service improvement.
 
-The focus is support readiness: identity and access troubleshooting, API error interpretation, pipeline log awareness, monitoring, escalation, documentation and continual service improvement.
+## License
 
-This lab is intentionally small and support-focused. It is not designed to simulate a full enterprise AI platform or production DevOps environment.
+MIT
