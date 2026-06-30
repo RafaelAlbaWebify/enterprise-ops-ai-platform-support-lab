@@ -13,6 +13,13 @@ This page lists the most useful documentation in the homelab.
 - [Architecture Overview](architecture.md)
 - [Roadmap](roadmap.md)
 
+## Lab foundation
+
+- [VirtualBox Lab Foundation](../lab-foundation/virtualbox/README.md)
+- [VirtualBox VM Plan](../lab-foundation/virtualbox/vm-plan.md)
+- [Initial VirtualBox Scenarios](../lab-foundation/virtualbox/initial-scenarios.md)
+- [Lab Evidence Model](../lab-foundation/virtualbox/evidence-model.md)
+
 ## Purpose
 
 The documentation in this folder focuses on support-level understanding of:
@@ -21,6 +28,7 @@ The documentation in this folder focuses on support-level understanding of:
 - identity and access troubleshooting
 - API error interpretation
 - pipeline failure triage
+- DNS and endpoint lab practice
 - escalation
 - documentation
 - continual service improvement
