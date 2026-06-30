@@ -2,6 +2,8 @@
 
 A practical homelab focused on IT Operations, Microsoft 365 and identity support, AI platform support scenarios, incident handling, documentation, monitoring awareness and support-level DevOps troubleshooting.
 
+This is now the canonical lab repository. The previous `homelab-virtualbox-foundation` material has been consolidated here under `lab-foundation/virtualbox/`.
+
 ## Purpose
 
 This repository shows operational support thinking rather than deep platform engineering. The goal is to demonstrate how I approach incidents, collect evidence, document findings and escalate clearly in enterprise-style environments.
@@ -18,6 +20,7 @@ This repository shows operational support thinking rather than deep platform eng
 - Knowledge base writing
 - Escalation notes and handover quality
 - AI Platform Operations support concepts
+- Practical lab foundation for DNS, endpoint and access scenarios
 
 ## Important Positioning
 
@@ -37,6 +40,7 @@ Completed so far:
 - AI Platform 403 incident walkthrough
 - Basic pipeline failure walkthrough
 - Service improvement log
+- VirtualBox lab foundation consolidated from the old homelab repository
 
 Next planned improvements:
 
@@ -46,6 +50,7 @@ Next planned improvements:
 - Improve pipeline examples
 - Add Windows Server and Linux VM practice notes
 - Add virtualization and networking practice gradually
+- Turn the VirtualBox foundation scenarios into completed evidence packs
 
 ## Key Walkthroughs
 
@@ -53,6 +58,7 @@ Next planned improvements:
 - [AI Platform 403 Forbidden Incident](docs/interview-walkthrough-ai-platform-403.md)
 - [Basic Pipeline Failure Triage](docs/interview-walkthrough-pipeline-failure.md)
 - [How to Explain This Lab in Interviews](docs/how-to-explain-this-lab-in-interviews.md)
+- [VirtualBox Lab Foundation](lab-foundation/virtualbox/README.md)
 
 ## Tested Support Scripts
 
@@ -73,14 +79,15 @@ These scripts are used for basic API support practice, including endpoint checks
 ## Documentation Areas
 
 ```text
-docs/          Architecture, roadmap and interview explanations
-runbooks/      Repeatable operational procedures
-kb/            Knowledge base articles
-incidents/     Sample incident tickets and support scenarios
-scripts/       Small PowerShell and Python support scripts
-pipelines/     Basic Azure DevOps pipeline example
-lab-notes/     Lessons learned, improvements and escalation examples
-examples/      Sample outputs and portfolio-friendly evidence
+docs/            Architecture, roadmap and interview explanations
+runbooks/        Repeatable operational procedures
+kb/              Knowledge base articles
+incidents/       Sample incident tickets and support scenarios
+scripts/         Small PowerShell and Python support scripts
+pipelines/       Basic Azure DevOps pipeline example
+lab-notes/       Lessons learned, improvements and escalation examples
+examples/        Sample outputs and portfolio-friendly evidence
+lab-foundation/  Practical VM/lab foundations for support scenarios
 ```
 
 ## Example Output
@@ -99,6 +106,7 @@ This lab practises how to:
 - review basic pipeline failure information
 - document findings in runbooks, KB articles and incident notes
 - improve support documentation after testing or repeated issues
+- build small lab scenarios that produce usable evidence
 
 ## Interview Summary
 
