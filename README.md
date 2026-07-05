@@ -1,12 +1,32 @@
 # Enterprise Ops + AI Platform Support Lab
 
-A practical homelab focused on IT Operations, Microsoft 365 and identity support, AI platform support scenarios, incident handling, documentation, monitoring awareness and support-level DevOps troubleshooting.
+> Supporting archive and incubator for support scenarios that feed my six-flagship portfolio.
 
-This is now the canonical lab repository. The previous `homelab-virtualbox-foundation` material has been consolidated here under `lab-foundation/virtualbox/`.
+This repository is a practical homelab focused on IT Operations, Microsoft 365 and identity support, AI platform support scenarios, incident handling, documentation, monitoring awareness and support-level DevOps troubleshooting.
+
+It is no longer positioned as a main flagship. I am keeping it as a **supporting lab archive** where I can preserve practice material, walkthroughs and evidence packs before moving the strongest pieces into TRACE, INFIOS, WATCH, OPSCORE or YTIS.
+
+The previous `homelab-virtualbox-foundation` material has been consolidated here under `lab-foundation/virtualbox/`.
+
+## Portfolio Role
+
+| Status | Purpose |
+|---|---|
+| Supporting archive / incubator | Source material for TRACE, INFIOS, WATCH, OPSCORE and YTIS |
 
 ## Purpose
 
 This repository shows operational support thinking rather than deep platform engineering. The goal is to demonstrate how I approach incidents, collect evidence, document findings and escalate clearly in enterprise-style environments.
+
+## How This Lab Feeds My Flagships
+
+| Material in this lab | Destination flagship |
+|---|---|
+| Identity and access troubleshooting | TRACE |
+| API errors, HTTP status codes, application support walkthroughs | INFIOS |
+| Website/service checks, workflow automation ideas | WATCH |
+| DNS, endpoint, VM, infrastructure and dependency evidence | OPSCORE |
+| AI Platform Operations, source intelligence and report thinking | YTIS |
 
 ## What This Lab Demonstrates
 
@@ -51,6 +71,7 @@ Next planned improvements:
 - Add Windows Server and Linux VM practice notes
 - Add virtualization and networking practice gradually
 - Turn the VirtualBox foundation scenarios into completed evidence packs
+- Move strong scenarios into the correct flagship repository when they mature
 
 ## Key Walkthroughs
 
