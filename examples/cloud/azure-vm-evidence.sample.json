@@ -1,0 +1,18 @@
+[
+  {
+    "vmName": "az-app-01",
+    "powerState": "running",
+    "resourceHealth": "available",
+    "networkReachability": "failed",
+    "cpuPercent": 22,
+    "diskFreePercent": 42
+  },
+  {
+    "vmName": "az-worker-01",
+    "powerState": "running",
+    "resourceHealth": "available",
+    "networkReachability": "ok",
+    "cpuPercent": 91,
+    "diskFreePercent": 7
+  }
+]

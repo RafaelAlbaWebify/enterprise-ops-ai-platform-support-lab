@@ -1,0 +1,18 @@
+[
+  {
+    "instanceId": "i-demo-app",
+    "state": "running",
+    "statusCheck": "impaired",
+    "networkReachability": "ok",
+    "cpuPercent": 35,
+    "diskFreePercent": 55
+  },
+  {
+    "instanceId": "i-demo-worker",
+    "state": "running",
+    "statusCheck": "ok",
+    "networkReachability": "failed",
+    "cpuPercent": 18,
+    "diskFreePercent": 9
+  }
+]
