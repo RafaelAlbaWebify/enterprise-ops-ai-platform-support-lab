@@ -1,0 +1,34 @@
+name: Portfolio evidence checks
+
+on:
+  push:
+    paths:
+      - "scripts/python/analyze_ops_evidence.py"
+      - "tests/**"
+      - "examples/modern-workplace/**"
+      - "examples/cloud/**"
+      - ".github/workflows/portfolio-evidence.yml"
+  pull_request:
+    paths:
+      - "scripts/python/analyze_ops_evidence.py"
+      - "tests/**"
+      - "examples/modern-workplace/**"
+      - "examples/cloud/**"
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile analyzer
+        run: python -m py_compile scripts/python/analyze_ops_evidence.py
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Exercise committed fixtures
+        run: |
+          python scripts/python/analyze_ops_evidence.py --kind intune --input examples/modern-workplace/intune-device-export.sample.json
+          python scripts/python/analyze_ops_evidence.py --kind azure --input examples/cloud/azure-vm-evidence.sample.json
+          python scripts/python/analyze_ops_evidence.py --kind aws --input examples/cloud/aws-ec2-evidence.sample.json
